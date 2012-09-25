@@ -1,0 +1,17 @@
+.panel {
+    border: 1px solid green;
+    width: 49%;
+    display: inline-block;
+}
+
+.top {
+    border: 1px solid green;
+    width: 100%;
+    display: inline-block;
+}
+
+.bottom {
+    border: 1px solid green;
+    width: 100%;
+    display: inline-block;
+}
