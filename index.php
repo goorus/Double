@@ -20,10 +20,5 @@ foreach ($pathes as $path) {
     }
 }
 
-require $ruonPath . '/Core.php';
-
-$bootstrap = Ruon\Core::init(__DIR__ . '/Double/Double/DoubleBootstrap.php');
-
-$bootstrap->getApplication()
-    ->setFrontController('Ruon\\Controller\\Front\\ControllerFrontWeb')
-    ->run();
+require $ruonPath . '/Ruon/Core.php';
+Ruon\Core::initApp(__DIR__ . '/Double', 'Double')->run();
