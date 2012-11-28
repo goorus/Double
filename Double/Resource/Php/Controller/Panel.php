@@ -5,7 +5,7 @@
     foreach ($explorer->getContent() as $file) {
         if ($file['isDir']) {
             ?>
-            <p><a class="dir_link" href="/?controller=Double\Controller\ControllerPanel&name=<?=htmlspecialchars($name)?>&path=<?=htmlspecialchars($path)?>/<?=htmlspecialchars($file['name'])?>"><?=htmlspecialchars($file['name'])?></a></p>
+            <p><a class="dir_link" href="/Panel?name=<?=urlencode($name)?>&path=<?=urlencode($path)?>/<?=urlencode($file['name'])?>"><?=htmlspecialchars($file['name'])?></a></p>
             <?php
         } else {
             ?>

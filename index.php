@@ -4,10 +4,6 @@
  * Запускающий файл Web-приложения
  */
 
-if (empty($_GET['controller'])) {
-    $_GET['controller'] = 'Double\\Controller\\ControllerIndex';
-}
-
 $pathes = array(
     __DIR__ . '/../../ruon.local/www/'
 );

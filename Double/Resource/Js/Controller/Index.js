@@ -17,19 +17,19 @@ $(function () {
     var controls = [
         {
             name: 'top',
-            url: '?controller=Double\\Controller\\ControllerMenu'
+            url: '/Menu'
         },
         {
             name: 'left',
-            url: '?controller=Double\\Controller\\ControllerPanel'
+            url: '/Panel'
         },
         {
             name: 'right',
-            url: '?controller=Double\\Controller\\ControllerPanel'
+            url: '/Panel'
         },
         {
             name: 'bottom',
-            url: '?controller=Double\\Controller\\ControllerCmd'
+            url: '/Cmd'
         }
     ];
 
