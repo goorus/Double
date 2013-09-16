@@ -37,17 +37,20 @@ $(function () {
         Double.refreshControl(controls[i]);
     }
 
-    $('.dir_link').live('click', function () {
-        var $this = $(this);
+    $('.panel').on(
+        'click',
+        '.dir_link', function () {
+            var $this = $(this);
 
-        $.ajax({
-            url: $this.attr('href'),
-            success: function (result) {
-                $this.closest('.file_panel').html(result);
-            }
-        });
+            $.ajax({
+                url: $this.attr('href'),
+                success: function (result) {
+                    $this.closest('.file_panel').html(result);
+                }
+            });
 
-        return false;
-    });
+            return false;
+        }
+    );
 
 });

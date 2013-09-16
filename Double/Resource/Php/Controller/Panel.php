@@ -1,15 +1,15 @@
-<div class="file_panel panel_<?=$name?>">
+<div class="file_panel panel_<?php echo $name?>">
 
     <?php
 
     foreach ($explorer->getContent() as $file) {
         if ($file['isDir']) {
             ?>
-            <p><a class="dir_link" href="/Panel?name=<?=urlencode($name)?>&path=<?=urlencode($path)?>/<?=urlencode($file['name'])?>"><?=htmlspecialchars($file['name'])?></a></p>
+            <p><a class="dir_link" href="/Panel?name=<?php echo urlencode($name)?>&path=<?php echo urlencode($path)?>/<?php echo urlencode($file['name'])?>"><?php echo htmlspecialchars($file['name'])?></a></p>
             <?php
         } else {
             ?>
-            <p><?=htmlspecialchars($file['name'])?></p>
+            <p><?php echo htmlspecialchars($file['name'])?></p>
             <?php
         }
     }
